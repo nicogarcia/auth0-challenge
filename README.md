@@ -25,3 +25,4 @@ Auth0 Challenge is a little game built upon Webtasks and Firebase that consists 
 - Maybe some race conditions on vote or winners writing.
 - Maybe req/sec webtask limitation is hit when there are many players at the same time.
 - Webtask GET method must be called from outside every second to update game state.
+- Some obvious refactorings and code optimizations needed.
