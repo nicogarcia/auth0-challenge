@@ -1,0 +1,10 @@
+{
+  "rules": {
+    ".read": true,
+    ".write": "auth != null",
+    "feedback": {
+      ".read": false,
+      ".write": true
+    }
+  }
+}
