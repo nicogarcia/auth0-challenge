@@ -236,7 +236,7 @@ function sendVote(site) {
     const now = new Date().getTime();
 
     if (lastVoteTime === null || (now - lastVoteTime >= 500)) {
-        const url = 'https://wt-e2c222553120d8740ef397c25290539b-0.run.webtask.io/auth0-aguante-4';
+        const url = 'https://wt-e2c222553120d8740ef397c25290539b-0.run.webtask.io/auth0-aguante';
 
         const req = new XMLHttpRequest();
 
