@@ -1,0 +1,111 @@
+body {
+    background: #090f29;
+    color: white;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 12px 20px;
+    border-radius: 3px;
+}
+
+#container h1 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+#container h2 {
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0 0 8px;
+}
+
+p.main {
+    line-height: 140%;
+    margin: 16px 0 24px;
+    font-size: 14px;
+}
+
+#container a, a.btn {
+    float: left;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #eb5424;
+    border-color: #e14615;
+}
+
+#container a, a.btn {
+    box-shadow: 0 1px 3px rgba(255, 255, 255, 0.12), 0 1px 2px rgba(255, 255, 255, 0.24);
+}
+
+@media (max-width: 600px) {
+    body, #container {
+        margin-top: 0;
+        box-shadow: none;
+    }
+}
+
+#chart {
+    height: 40vh;
+    float: left;
+    width: 100%;
+}
+
+.stats {
+    padding: 0 10px 5px 10px;
+}
+
+.stats-title {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.stats-score {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.stats-wins {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.comments {
+    float: left;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.comments-title {
+    float: left;
+    margin: 0 0;
+}
+
+.comment {
+    float: left;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto;
+    height: 50px;
+}
+
+.full-width {
+    float: left;
+    width: 100%;
+}
+
+.share {
+    color: #eb5424;
+}

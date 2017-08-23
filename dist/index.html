@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="dist/style.css"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Auth0 Site's Aguante</title>
+    <link rel="shortcut icon" href="https://cdn.auth0.com/styleguide/components/1.0.8/media/logos/img/favicon.png">
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/4.2.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/4.2.0/firebase-database.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+<div id="container">
+    <h2>Auth0 Site Challenge</h2>
+    <h1>Which Auth0 site has the best people?</h1>
+
+    <div id="winners" class="full-width">
+        <div id="sites">
+        </div>
+
+        <div class="full-width">
+            <!--<p>Latest winner: <span id="latest-winner"></span></p>-->
+            <p class="share">Votes are short-lived, share the game with your mates to beat the other sites!</p>
+            <p>Current challenge expires in: <span id="remaining-time"></span></p>
+        </div>
+    </div>
+
+    <div id="chart"></div>
+
+
+    <div class="comments">
+        <p class="comments-title">Comments? Feedback?</p>
+
+        <textarea id="comment" class="comment"></textarea>
+
+        <div>
+            <a class="btn" id="submit-feedback" href="javascript:onFeedbackSubmit()">Submit</a>
+        </div>
+
+    </div>
+</div>
+
+<script src="js/main.js"></script>
+
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-105181200-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+</body>
+</html>
