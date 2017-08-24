@@ -2,6 +2,8 @@
 
 Auth0 Challenge is a little game built upon Webtasks and Firebase that consists of people concurrently voting to make their favorite Auth0 site win races.
 
+[Click here to play!](https://auth0-aguante.firebaseapp.com)
+
 ### Rules
 - Hacking is forbidden! (if we can say doing a simple HTTP POST loop is hacking).
 - Votes are short-lived.
