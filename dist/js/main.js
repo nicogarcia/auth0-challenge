@@ -13,6 +13,11 @@ let sitesData = [{
     label: 'London',
     value: 0,
     url: 'img/big_ben.png'
+}, {
+    id: 'MONTREAL',
+    label: 'Montreal',
+    value: 0,
+    url: 'img/montreal.png'
 }];
 
 let winners = null;
@@ -186,9 +191,9 @@ function updateChallengeDraw(data, winners) {
         .merge(symbols)
         .transition()
         .duration(500)
-        .attr('y', (d, i) => ((i + 1 / 2) * 30) + '%')
+        .attr('y', (d, i) => (i * (100 / data.length)) + '%')
         .attr('x', d => Math.min(relativeEnd - offset, offset + d.value * relativeEnd / globalEnd))
-        .attr('height', 20 + '%');
+        .attr('height', (100 / data.length) + '%');
 
     if (winners && winners.current) {
         const g = svg
