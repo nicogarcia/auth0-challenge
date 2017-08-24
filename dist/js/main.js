@@ -65,7 +65,7 @@ const onFeedbackSubmit = () => {
     const value = feedbackElement.value;
 
     firebase.app().database().ref('feedback').push({
-        timestamp: new Date(),
+        timestamp: moment().utc().toString(),
         comment: value
     });
 
