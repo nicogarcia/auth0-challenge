@@ -11,7 +11,7 @@ const config = {
     messagingSenderId: "937497444895"
 };
 
-const winningScore = 80;
+const winningScore = 50;
 const challengeTime = 300;
 
 const getWinners = winners => {

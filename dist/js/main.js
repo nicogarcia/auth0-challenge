@@ -31,7 +31,7 @@ let svg = d3.select('#chart')
 let relativeWidth;
 let relativeHeight;
 let offset = 20;
-let globalEnd = 80;
+let globalEnd = 50;
 let relativeEnd;
 let challengeTime = 300;
 let lastVoteTime = null;
