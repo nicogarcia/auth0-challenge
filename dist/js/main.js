@@ -18,6 +18,11 @@ let sitesData = [{
     label: 'Montreal',
     value: 0,
     url: 'img/montreal.png'
+}, {
+    id: 'CORDOBA',
+    label: 'Córdoba',
+    value: 0,
+    url: 'img/cordoba.png'
 }];
 
 let winners = null;
